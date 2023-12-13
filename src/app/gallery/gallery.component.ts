@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConfigService } from '../services/config.service';
 
 @Component({
   selector: 'app-gallery',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class GalleryComponent {
 
+  gallery = {
+    images: [{}]
+  };
+
+  constructor(private config: ConfigService) {
+
+  }
+  
+  ngOnInit(){
+    this.gallery = this.getGallery();
+  }
+  
+  getGallery(){
+    return this.config.getConfig().gallery;
+  }
 }
