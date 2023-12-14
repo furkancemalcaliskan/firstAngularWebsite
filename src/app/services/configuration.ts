@@ -132,6 +132,15 @@ export const configuration = {
           {id: 2, title: 'The second Article', author: 'dejkoveci', image: 'gallery-image-2.jpg', excert: 'Lorem ipsum fussum hami', date: '2023-12-12T10:00Z'},
           {id: 3, title: 'The third Article', author: 'dejkoveci', image: 'gallery-image-3.jpg', excert: 'Lorem ipsum muspi meroL', date: '2023-12-12T10:09Z'},
           {id: 4, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+          {id: 5, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+          {id: 6, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+          {id: 7, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+          {id: 8, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+          {id: 9, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+          {id: 10, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+          {id: 11, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+          {id: 12, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+          {id: 13, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
         ]
       }
 }
