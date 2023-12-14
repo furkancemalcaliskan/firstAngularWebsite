@@ -123,9 +123,16 @@ export const configuration = {
         {target: '_blank', title: 'Google+', userName: 'dejkoveci', icon: 'google-plus', link: 'https://www.google.com/+'},
         {target: '_blank', title: 'Twitter', userName: 'dejkoveci', icon: 'twitter', link: 'https://www.twitter.com/'},
         {target: '_blank', title: 'Instagram', userName: 'dejkoveci', icon: 'instagram', link: 'https://www.instagram.com/'},
-        {target: '_blank', title: 'behance', userName: 'dejkoveci', icon: 'behance', link: 'https://www.behance.net/'}]
-        
-      
-      
+        {target: '_blank', title: 'behance', userName: 'dejkoveci', icon: 'behance', link: 'https://www.behance.net/'}],
+      blog: {
+        tagLine: 'MY BLOG',
+        title: 'Thoughts become things...',
+        posts: [
+          {id: 1, title: 'The first Article', author: 'dejkoveci', image: 'gallery-image-1.jpg', excert: 'This is the first excert of blog page', date: '2023-12-12T09:00Z'},
+          {id: 2, title: 'The second Article', author: 'dejkoveci', image: 'gallery-image-2.jpg', excert: 'Lorem ipsum fussum hami', date: '2023-12-12T10:00Z'},
+          {id: 3, title: 'The third Article', author: 'dejkoveci', image: 'gallery-image-3.jpg', excert: 'Lorem ipsum muspi meroL', date: '2023-12-12T10:09Z'},
+          {id: 4, title: 'The fourth Article', author: 'dejkoveci', image: 'gallery-image-4.jpg', excert: 'Ala rasi wal ayn habiib albi', date: '2023-12-12T12:00Z'},
+        ]
+      }
 }
 
