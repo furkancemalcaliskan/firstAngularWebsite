@@ -1,0 +1,42 @@
+<!-- Contact Us Page -->
+<section id="contactUs" class="secondary-color text-center scrollto clearfix ">
+    <div class="row clearfix">
+        <div class="container">
+            <div class="center-form panel">
+                <div class="panel-body">
+                    <h4 class="text-center"><ion-icon name="create"></ion-icon> Contact Us</h4>
+                    <form [formGroup]="contactUsForm" (ngSubmit)="submit(contactUsForm.value)">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" formControlName="firstName"
+                                placeholder="First Name" name="firstName">
+                            <ion-icon name="person" class="form-control-icon"></ion-icon>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" formControlName="lastName"
+                                placeholder="Last Name" name="lastName">
+                            <ion-icon name="person" class="form-control-icon"></ion-icon>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" formControlName="email"
+                                placeholder="E-Mail" name="email">
+                            <ion-icon name="mail" class="form-control-icon"></ion-icon>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="10" cols="100" class="form-control input-lg" formControlName="message"
+                                placeholder="Message" name="message"></textarea>
+                            <ion-icon name="create" class="form-control-icon-textarea"></ion-icon>
+                        </div>
+                        <br />
+                        <button type="submit" [class.disabled]="!contactUsForm.valid"
+                            class="btn btn-block btn-success">Send</button>
+                        <br />
+                        <small>Leave a Message to Contact Us!</small>
+                        <br />
+                        <small>Get Me Back to <a routerLink="/Home">Home</a></small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Contact Us Page -->

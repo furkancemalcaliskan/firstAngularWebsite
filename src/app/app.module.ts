@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { InMemoryDataService } from './in-memory-data.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IntroComponent } from './intro/intro.component';
@@ -20,6 +20,13 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { PaginationComponent } from './pagination/pagination.component';
 import { ConfigService } from './services/config.service';
 import { PagerService } from './pager.service';
+import { LoginComponent } from './login/login.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { SignupComponent } from './signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { IonicModule } from '@ionic/angular';
+import { HttpClientModule } from '@angular/common/http';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 
 @NgModule({
@@ -39,11 +46,20 @@ import { PagerService } from './pager.service';
     PostComponent,
     ArticleComponent,
     NotfoundComponent,
-    PaginationComponent
+    PaginationComponent,
+    LoginComponent,
+    ContactusComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    IonicModule.forRoot({}),
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false}
+    )
   ],
   providers: [ConfigService, PagerService],
   bootstrap: [AppComponent]

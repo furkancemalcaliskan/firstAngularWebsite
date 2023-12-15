@@ -1,0 +1,40 @@
+<!-- Sign Up Page -->
+<section id="signUp" class="secondary-color text-center scrollto clearfix ">
+    <div class="row clearfix">
+        <div class="container">
+            <div class="center-form panel">
+                <div class="panel-body">
+                    <h4 class="text-center"><ion-icon name="person" size="small"></ion-icon> Sign Up</h4>
+                    <form [formGroup]="signUpForm" (ngSubmit)="signUp(signUpForm.value)">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" formControlName="firstName"
+                                placeholder="First Name" name="firstName">
+                            <ion-icon name="person" class="form-control-icon" size="small"></ion-icon>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" formControlName="lastName"
+                                placeholder="Last Name" name="lastName">
+                            <ion-icon name="person" class="form-control-icon" size="small"></ion-icon>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" formControlName="email"
+                                placeholder="E-Mail" name="email">
+                            <ion-icon name="mail" class="form-control-icon" size="small"></ion-icon>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control input-lg" formControlName="password"
+                                placeholder="Password" name="password">
+                            <ion-icon name="key" class="form-control-icon" size="small"></ion-icon>
+                        </div>
+                        <br />
+                        <button type="submit" [class.disabled]="!signUpForm.valid"
+                            class="btn btn-block btn-success">Sign Up</button>
+                        <br />
+                        <small>Already Have an Account? <a routerLink="/Login">Login</a></small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Sign Up Page -->

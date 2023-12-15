@@ -1,0 +1,30 @@
+<!-- Login Page -->
+<section id="login" class="secondary-color text-center scrollto clearfix ">
+    <div class="row clearfix">
+        <div class="container">
+            <div class="center-form panel">
+                <div class="panel-body">
+                    <h4 class="text-center"><ion-icon name="log-in"></ion-icon> Login</h4>
+                    <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" formControlName="email"
+                                placeholder="E-Mail" name="email">
+                            <ion-icon name="at" class="form-control-icon"></ion-icon>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control input-lg" formControlName="password"
+                                placeholder="Password" name="password">
+                            <ion-icon name="key" class="form-control-icon"></ion-icon>
+                        </div>
+                        <br />
+                        <button type="submit" [class.disabled]="!loginForm.valid"
+                            class="btn btn-block btn-success">Login</button>
+                        <br />
+                        <small>Don't Have an Account Yet? <a routerLink="/SignUp">Sign Up</a></small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Login Page -->
